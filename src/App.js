@@ -22,7 +22,7 @@ function App() {
       <div className="colorSquare"
         style={{
           'position': 'relative',
-          'marginTop': '10%'
+          'marginTop': '10%',
         }}>
 
         <div className='color-square'
@@ -30,7 +30,8 @@ function App() {
             'width': '200px',
             'height': '200px',
             'borderRadius': '10px',
-            'border': '1px solid black'
+            'border': '1px solid black',
+            'backgroundColor': color
           }}>
           {/* <p>{length > 0 ? 'Empty value' : {color}}</p> */}
           <p>Empty Value {color}</p>
