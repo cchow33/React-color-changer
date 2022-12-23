@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Square = ({ color, setColor, changeColor }) => {
+const Square = ({ color, hexValue }) => {
   return (
     <main>
       <section
@@ -11,7 +11,12 @@ const Square = ({ color, setColor, changeColor }) => {
         'border': '1px solid black',
         'backgroundColor': color
       }}>
-        <p>{color ? color : 'Empty Value'}</p>
+        <p 
+          className='label'
+          style={{
+            'marginTop': '30%'
+          }}>{color ? color : 'Empty Value'}</p>
+        <p>{hexValue ? hexValue : null }</p>
       </section>
 
     </main>

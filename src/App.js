@@ -5,7 +5,9 @@ import Square from './components/Square';
 import Search from './components/Search';
 
 function App() {
-  const [color, setColor] = useState('')
+  const [color, setColor] = useState('');
+  const [hexValue, setHexValue] = useState('');
+
   const changeColor = (color) => {
     console.log(color)
   }
@@ -39,6 +41,7 @@ function App() {
         color={color}
         setColor={setColor}
         onKeyDown={changeColor}
+        hexValue={hexValue}
       />
 
       {/* <input 
@@ -62,8 +65,9 @@ function App() {
         color={color}
         setColor={setColor}
         onKeyDown={changeColor}
+        hexValue={hexValue}
+        setHexValue={setHexValue}
       />
-
 
     </div>
   );
