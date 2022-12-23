@@ -7,6 +7,8 @@ import Search from './components/Search';
 function App() {
   const [color, setColor] = useState('');
   const [hexValue, setHexValue] = useState('');
+  // set dark as default
+  const [isDark, setIsDark] = useState(true);
 
   const changeColor = (color) => {
     console.log(color)
@@ -42,6 +44,7 @@ function App() {
         setColor={setColor}
         onKeyDown={changeColor}
         hexValue={hexValue}
+        isDark={isDark}
       />
 
       {/* <input 
@@ -67,6 +70,8 @@ function App() {
         onKeyDown={changeColor}
         hexValue={hexValue}
         setHexValue={setHexValue}
+        isDark={isDark}
+        setIsDark={setIsDark}
       />
 
     </div>

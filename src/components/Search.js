@@ -1,7 +1,7 @@
 import React from 'react'
 import colorNames from 'colornames'
 
-const Search = ({ color, setColor, changeColor, hexValue, setHexValue }) => {
+const Search = ({ color, setColor, changeColor, hexValue, setHexValue, isDark, setIsDark }) => {
   return (
     <section>
       <input 
@@ -24,6 +24,11 @@ const Search = ({ color, setColor, changeColor, hexValue, setHexValue }) => {
         onKeyDown={(e) => changeColor(e.target.value)}
       >        
       </input>
+      <button onClick={() => setIsDark(!isDark)}>
+        Toggle Text Color
+      </button>
+
+
     </section>
   )
 }

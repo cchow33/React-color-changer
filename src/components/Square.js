@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Square = ({ color, hexValue }) => {
+const Square = ({ color, hexValue, isDark }) => {
   return (
     <main>
       <section
@@ -9,7 +9,8 @@ const Square = ({ color, hexValue }) => {
         'height': '200px',
         'borderRadius': '10px',
         'border': '1px solid black',
-        'backgroundColor': color
+        'backgroundColor': color,
+         color: isDark ? '#000' : '#FFF'
       }}>
         <p 
           className='label'
