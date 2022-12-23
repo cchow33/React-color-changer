@@ -5,8 +5,9 @@ import { useState } from 'react'
 function App() {
   const [color, setColor] = useState('')
 
+
   const changeColor = (color) => {
-    console.log(`${color} picked`)
+    console.log(color)
   }
 
 
@@ -31,7 +32,8 @@ function App() {
             'borderRadius': '10px',
             'border': '1px solid black'
           }}>
-          <p>{p.length > 0 ? 'Empty value' : {color}}</p>
+          {/* <p>{length > 0 ? 'Empty value' : {color}}</p> */}
+          <p>Empty Value {color}</p>
         </div>
 
         <input 
@@ -47,6 +49,7 @@ function App() {
             'marginTop': '10px'
           }}  
           onChange={(e) => setColor(e.target.value)}
+          onKeyDown={(e) => changeColor(e.target.value)}
         >
           
         </input>
