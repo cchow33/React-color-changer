@@ -2,7 +2,7 @@ import React from 'react'
 
 const Search = ({ color, setColor, changeColor }) => {
   return (
-    <div>
+    <section>
       <input 
         type="text"
         autofocus
@@ -19,7 +19,7 @@ const Search = ({ color, setColor, changeColor }) => {
         onKeyDown={(e) => changeColor(e.target.value)}
       >        
       </input>
-    </div>
+    </section>
   )
 }
 
